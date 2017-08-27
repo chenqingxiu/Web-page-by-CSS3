@@ -1,0 +1,474 @@
+/* header */
+.header_status-init
+{
+    top: 0;
+}
+
+.header_status-done
+{
+    background-color: #fefefe;
+}
+
+.header__logo_status-done,
+.header__nav-item_status-done
+{
+    cursor: pointer;
+
+    color: #000;
+}
+
+.header__logo_status-done:hover,
+.header__nav-item_status-done:hover
+{
+    color: #f00;
+}
+
+.header,
+.header__logo,
+.header__nav-item
+{
+    transition: all 2s;
+}
+
+.header__underline
+{
+    transition: all 1s .3s;
+}
+
+/* screen1 */
+.screen1__h1_status-done
+{
+    padding-top: 230px;
+
+    opacity: 1;
+}
+
+.screen1__h3_status-done
+{
+    padding-top: 30px;
+
+    opacity: 1;
+}
+/* 大标题和小标题同时出现 */
+.screen1__h1,
+.screen1__h3
+{
+    transition: all 2s;
+}
+
+/* screen2 */
+.screen2__h1_status-init
+{
+    padding-top: 170px;
+
+    opacity: 0;
+}
+
+.screen2__h1_status-init::after
+{
+    top: 265px;
+
+    opacity: 0;
+}
+
+.screen2__h3_status-init
+{
+    padding-top: 50px;
+
+    opacity: 0;
+}
+
+.screen2__img-man_status-init
+{
+    opacity: 0;
+}
+
+.screen2__h1,
+.screen2__h1::after,
+.screen2__h3,
+.screen2__img-man
+{
+    transition: all 2s;
+}
+
+.screen2__img-rocket_status-done
+{
+    animation: rocket 1s ease 2s forwards;
+}
+
+@-webkit-keyframes rocket
+{
+    0%
+    {
+        top: 640px;
+
+        opacity: 0;
+    }
+    60%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+    70%
+    {
+        top: 400px;
+
+        opacity: 1;
+    }
+    80%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+    90%
+    {
+        top: 350px;
+
+        opacity: 1;
+    }
+    100%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+}
+@-o-keyframes rocket
+{
+    0%
+    {
+        top: 640px;
+
+        opacity: 0;
+    }
+    60%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+    70%
+    {
+        top: 400px;
+
+        opacity: 1;
+    }
+    80%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+    90%
+    {
+        top: 350px;
+
+        opacity: 1;
+    }
+    100%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+}
+@-moz-keyframes rocket
+{
+    0%
+    {
+        top: 640px;
+
+        opacity: 0;
+    }
+    60%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+    70%
+    {
+        top: 400px;
+
+        opacity: 1;
+    }
+    80%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+    90%
+    {
+        top: 350px;
+
+        opacity: 1;
+    }
+    100%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+}
+@keyframes rocket
+{
+    0%
+    {
+        top: 640px;
+
+        opacity: 0;
+    }
+    60%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+    70%
+    {
+        top: 400px;
+
+        opacity: 1;
+    }
+    80%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+    90%
+    {
+        top: 350px;
+
+        opacity: 1;
+    }
+    100%
+    {
+        top: 300px;
+
+        opacity: 1;
+    }
+}
+
+/* screen3 */
+.screen3__h1_status-init
+{
+    padding-top: 280px;
+
+    opacity: 0;
+}
+
+.screen3__h1_status-init::after
+{
+    top: 390px;
+
+    opacity: 0;
+}
+
+.screen3__h3_status-init
+{
+    padding-top: 150px;
+
+    opacity: 0;
+}
+
+.screen3__img-construction_status-init
+{
+    margin-right: 320px;
+
+    transform: scale(.1);
+
+    opacity: 0;
+}
+/* 左侧原子弹图片快速出现 */
+.screen3__img-construction
+{
+    transition: all 1s;
+}
+
+.screen3__ul_status-init
+{
+    bottom: -50px;
+
+    opacity: 0;
+}
+/* 右侧的大、小图标以及标题分割线同时缓缓进入 */
+.screen3__h1,
+.screen3__h1::after,
+.screen3__h3
+{
+    transition: all 2s;
+}
+/* 5个课程1秒后再出现 */
+.screen3__ul
+{
+    transition: all 2s 1s;
+}
+/* 5个课程呼吸灯效果 */
+.screen3__ul-li
+{
+    animation: breath 2s ease infinite;
+}
+
+@-webkit-keyframes breath
+{
+    0%
+    {
+        transform: scale(.9);
+    }
+    50%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(.9);
+    }
+}
+@-o-keyframes breath
+{
+    0%
+    {
+        transform: scale(.9);
+    }
+    50%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(.9);
+    }
+}
+@-moz-keyframes breath
+{
+    0%
+    {
+        transform: scale(.9);
+    }
+    50%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(.9);
+    }
+}
+@keyframes breath
+{
+    0%
+    {
+        transform: scale(.9);
+    }
+    50%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(.9);
+    }
+}
+
+
+/* screen4 */
+.screen4__h1_status-init
+{
+    top: 180px;
+
+    opacity: 0;
+}
+
+.screen4__h1_status-init::after
+{
+    top: 185px;
+
+    opacity: 0;
+}
+
+.screen4__h3_status-init
+{
+    top: 330px;
+
+    opacity: 0;
+}
+
+.screen4__ul_status-init
+{
+    transform: scale(.1);
+
+    opacity: 0;
+}
+/* 大标题和图片先出现 */
+.screen4__h1,
+.screen4__ul
+{
+    transition: all 2s;
+}
+/* 1秒后出现小标题和分割线 */
+.screen4__h1::after,
+.screen4__h3
+{
+    transition: all 2s 1s;
+}
+
+/* screen5 */
+.screen5__h1_status-init
+{
+    top: 450px;
+
+    opacity: 0;
+}
+
+.screen5__h1_status-init::after
+{
+    top: 85px;
+
+    opacity: 0;
+}
+
+.screen5__h3_status-init
+{
+    bottom: 20px;
+
+    opacity: 0;
+}
+
+.screen5__img-brain_status-init
+{
+    transform: scale(.1);
+
+    opacity: 0;
+}
+/* 人物头部快速出现 */
+.screen5__img-brain
+{
+    transition: all 1s;
+}
+/* 大标题先出现 */
+.screen5__h1
+{
+    transition: all 2s;
+}
+/* 小标题和分割线随后出现 */
+.screen5__h1::after,
+.screen5__h3
+{
+    transition: all 2s .5s;
+}
+
+/* 侧边栏 */
+.aside__ul_status-done
+{
+    opacity: 1;
+    background-color: #fff;
+}
+
+.aside__ul_status-done
+{
+    transition: all 2s;
+}
